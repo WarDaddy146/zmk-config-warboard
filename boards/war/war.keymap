@@ -5,15 +5,18 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    // Define a default keymap here.
-    // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
+    // Staging keymap: one binding per matrix position (20 total). All are
+    // placeholders (&none) until behaviors are wired in later phases. The
+    // dead cell RC(2,4) at position 14 is permanently &none.
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &kp A &kp B
-                &kp C &kp D
+                &none &none &none &none &none
+                &none &none &none &none &none
+                &none &none &none &none &none
+                &none &none &none &none &none
             >;
         };
     };
